@@ -1,0 +1,320 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+
+header {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 10px 0;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile-picture img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+    position: relative;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ecf0f1;
+    padding: 10px;
+    display: block;
+    transition: color 0.3s, transform 0.3s;
+    transform-origin: center bottom;
+    position: relative;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #e74c3c; /* Updated underline color (red) */
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+nav a:hover::after {
+    transform: scaleX(1);
+    background-color: #27ae60; /* Updated underline color on hover (green) */
+}
+
+nav a:hover {
+    transform: scale(1.1) translate(0, -5px);
+    color: #fff;
+}
+
+/* Add the following rule to display the dropdown content on hover */
+nav ul li:hover .dropdown-content {
+    display: block;
+}
+
+/* Placeholder for dropdown content styling */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #2c3e50; /* Set to transparent or remove this line */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    top: 100%;
+    border-radius: 10px;
+}
+
+
+.internal-dropdown:hover .internal-dropdown-content {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background-color: #2c3e50; /* Set to transparent or remove this line */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.internal-dropdown-content {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+
+.internal-dropdown-content li {
+    display: block;
+}
+
+/* Adjust the LinkedIn logo size */
+.linkedin-logo {
+    width: 20px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.profile-section {
+  display: flex;
+  align-items: center;
+}
+
+.profile-picture {
+  margin-right: 10px; /* Adjust margin as needed */
+}
+
+.linkedin-link {
+  margin-left: 10px; /* Adjust margin as needed */
+}
+
+/* ... (your existing styles) ... */
+
+.Vertical-line {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.Vertical-line h3 {
+    color: #fff; /* Set the color of the vertical lines to match the background color */
+    margin: -5;
+    padding: 0; /* Ensure no padding */
+}
+
+
+.name-title {
+    margin-left: 35px; /* Adjust the margin as needed to add space between the lines and the name-title */
+}
+
+.resume-container {
+    /* Set the initial width of the resume container */
+    width: 100px;
+    
+    /* Hide any overflow beyond the specified width */
+    overflow: hidden;
+    
+    /* Add a smooth transition for width changes */
+    transition: width 0.3s;
+    
+    /* Set the cursor to a pointer to indicate interactivity */
+    cursor: pointer;
+}
+
+
+#resume-preview {
+    /* Set the width to 100% to ensure it fills the container */
+    width: 100%;
+    
+    /* Maintain the aspect ratio of the image */
+    height: auto;
+    
+    /* Ensure the image is displayed as a block element */
+    display: block;
+}
+
+/* About Me Section Styles */
+.about-me {
+    /* Set the background color for the "About Me" section */
+    background-color: #dbdbdb;
+    
+    /* Add padding to create space around the content */
+    padding: 40px 20px;
+    
+    /* Add margin at the top to separate it from the previous section */
+    margin-top: 20px;
+  
+  background-size: flex;
+}
+
+.about-me h2 {
+    /* Set the font size, color, and margin for the "About Me" heading */
+    font-size: 24px;
+    color: #000000;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.about-me p {
+    /* Set the font size, color, and line height for paragraphs in the "About Me" section */
+    font-size: 16px;
+    color: #000000;
+    line-height: 1.6;
+    margin-left: 5%;
+}
+
+/* Section Divider Styles */
+.section-divider {
+    /* Add a 2px solid border at the top of the section divider */
+    border-top: 2px solid #ccc;
+    
+    /* Add margin to create space above and below the divider */
+    margin: 20px 0;
+}
+
+
+
+/* Blog Section Styles */
+.blog {
+    background-color: #f8f9fa; /* Set the background color for the blog section */
+    background-image: url('PClines.png'); /* Set the background image path */
+    background-size: auto; /* Cover the entire background with the image */
+    background-position: center; /* Center the background image */
+    padding: 20px 10px;
+}
+
+.blog h2 {
+    font-family: 'Arial', sans-serif;
+    font-size: 28px; /* Increase the font size of the blog title */
+    color: #000000
+; /* Set a dark color for the title */
+    margin-bottom: 30px; /* Add bottom margin for separation */
+  display: inline-block; /* Make the container inline-block to wrap around the text */
+  border-radius: 8px; /* Add rounded corners for a card-like appearance */
+  background-color: #fff; /* Add a white background behind the h2 text */
+    padding: 10px; /* Adjust the padding as needed */
+}
+
+.blog-post {
+    background-color: #fff; /* Set a white background for each blog post */
+    padding-top: .5px;
+    padding-bottom: 20px; /* Add padding for space around the blog post content */
+  padding-left: 20px;
+  padding-right: 20px;
+    border-radius: 8px; /* Add rounded corners for a card-like appearance */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow for elevation */
+    margin-bottom: 30px; /* Add bottom margin for separation between blog posts */
+    margin-left: 5%;
+  width: 75%;
+
+}
+
+.blog-post h3 {
+    font-size: 22px; /* Increase the font size of the blog post titles */
+    color: #000000
+; /* Set a dark color for the titles */
+    margin-bottom: 10px; /* Add bottom margin for separation */
+}
+
+
+.blog-post p {
+    font-size: 16px; /* Set the font size of the blog post content */
+    color: #181818; /* Set a slightly darker color for the content */
+    line-height: 1.6; /* Improve the line height for better readability */
+}
+
+.blog-post h4 {
+  font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    color: #929292;
+    margin-bottom: 10px;
+}
+
+.additional-box {
+     background-color: #fff;
+      display: inline-block; /* Make the container inline-block to 
+  wrap around the text */
+  color: #181818; /* Set a slightly darker color for the content */
+    border-radius: 8px; /* Add rounded corners for a card-like appearance */
+  padding: 20px; /* Adjust the padding as needed */
+  padding-top: 1px;
+  padding-bottom: 1px;
+  margin-left: 5%;
+}
+
+
+/* "Contact Me" Button Styles */
+.contact-button {
+    background-color: #3498db; /* Set a blue background color for the button */
+    color: #fff; /* Set white text color for better contrast */
+    padding: 10px 20px; /* Add padding to the button for a comfortable click area */
+    font-size: 16px; /* Set the font size of the button text */
+    border: none; /* Remove the default button border */
+    border-radius: 4px; /* Add rounded corners for a modern look */
+    cursor: pointer; /* Set the cursor to a pointer for indicating interactivity */
+    transition: background-color 0.3s; /* Add a smooth transition for background color change */
+
+    /* Style the button on hover */
+    &:hover {
+        background-color: #2c3e50; /* Darken the background color on hover */
+    }
+}
+
+
+footer {
+    background-color: #34495e; /* Set the background color for the footer */
+    color: #ecf0f1; /* Set the text color for the footer content */
+    padding: 20px 0; /* Add padding to the footer for spacing */
+    text-align: center; /* Align the text to the center */
+}
+
+footer p {
+    margin: 0; /* Remove default margin for paragraphs inside the footer */
+}
+
