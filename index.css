@@ -11,6 +11,11 @@ html {
     overflow-x: hidden;
 }
 
+  @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+
 .container {
     width: 80%;
     margin: 0 auto;
