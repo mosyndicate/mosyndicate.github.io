@@ -15,22 +15,44 @@
 
     #PDF {
       width: 63%;
-      height: 975px;
+      height: 975px; 
     }
 
-    video {
-      width: 36%;
+    .video-container {
+      width: 36%; 
+      height: auto;
+      margin-bottom: 20px; 
+    }
+
+    .video-container video {
+      width: 100%;
       height: auto;
     }
   </style>
 </head>
 <body>
   <iframe id="PDF" src="PowerShell_Location_Status.pdf" frameborder="0"></iframe>
-  <video controls>
-    <source src="VPN_Location_Video.mp4" type="video/mp4">
-    <source src="TraceRoute_Location_Video.mp4" type="video/mp4">
-    <source src="IP_Location_Video.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
+  
+  <div class="video-container">
+    <video controls>
+      <source src="VPN_Location_Video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  
+  <div class="video-container">
+    <video controls>
+      <source src="TraceRoute_Location_Video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  
+  <div class="video-container">
+    <video controls>
+      <source src="IP_Location_Video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
 </body>
 </html>
