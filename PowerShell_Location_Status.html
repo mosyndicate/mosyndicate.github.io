@@ -8,54 +8,44 @@
   <style>
     body {
       display: flex;
-      justify-content: flex-start;
+      justify-content: space-between;
       align-items: flex-start;
       padding: 20px;
     }
 
     #PDF {
-      width: 63%; /* Adjust this width as needed */
-      height: 975px; /* Adjust the height as needed */
+      width: 63%;
+      height: 975px;
     }
 
-    .video-container {
-      width: 36%; /* Adjust this width as needed */
-      height: auto;
-      margin-left: 20px; /* Adjust margin between PDF and videos */
+    #video-container {
+      width: 36%;
+      display: flex;
+      flex-direction: column;
     }
 
-    .video-container video {
+    video {
       width: 100%;
       height: auto;
-      display: block;
-      margin-bottom: 10px; /* Optional: Adds spacing between videos */
+      margin-bottom: 10px;
     }
   </style>
 </head>
 <body>
   <iframe id="PDF" src="PowerShell_Location_Status.pdf" frameborder="0"></iframe>
-  
-  <div class="video-container">
+  <div id="video-container">
     <video controls>
       <source src="VPN_Location_Video.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
-  </div>
-  
-  <div class="video-container">
     <video controls>
       <source src="TraceRoute_Location_Video.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
-  </div>
-  
-  <div class="video-container">
     <video controls>
       <source src="IP_Location_Video.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
   </div>
-
 </body>
 </html>
-
