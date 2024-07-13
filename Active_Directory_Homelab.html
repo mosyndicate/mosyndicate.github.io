@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Active Directory Homelab Page</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 20px;
+    }
+
+    #PDF {
+      width: 63%;
+      height: 975px;
+    }
+
+    #video-container {
+      width: 36%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .video-wrapper {
+      margin-bottom: 10px;
+    }
+
+    video {
+      width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <iframe id="PDF" src="Active_Directory_Homelab.pdf" frameborder="0"></iframe>
+  <div id="video-container">
+    <div class="video-wrapper">
+      <h2>Location Status Using Network Adaptor Details</h2>
+      <video controls>
+        <source src="PowerShell_User_Creation.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div class="video-wrapper">
+      <h2> 1000+ User Creation w/ PowerShell </h2>
+      <video controls>
+        <source src="TraceRoute_Location_Video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div class="video-wrapper">
+      <h2>Active Directory Users and Computers</h2>
+      <video controls>
+        <source src="Active_Directory_Users_and_Computers.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+</body>
+</html>
+
