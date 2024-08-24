@@ -4,28 +4,12 @@ function expandResume() {
     document.querySelector('.resume-container').style.width = '500px'; // Set your desired expanded size
 }
 
-// Function to shrink the resume container back to the preview size
-function shrinkResume() {
-    // Select the element with the class 'resume-container' and set its width to 100px
-    document.querySelector('.resume-container').style.width = '100px'; // Set your desired preview size
-}
-
-// Function to redirect to the resume page
-function redirectToResumePage() {
-    
-    window.location.href = 'Resume.pdf';
-}
 
 
 // Function to open the LinkedIn when the "Contact Me" button is clicked
-function LinkedIn() {
-    window.location.href = 'https://www.linkedin.com/in/mahamud-osman/';
+function redirectToLinkedIn() {
+    window.location.href = "https://www.linkedin.com/in/mahamud-osman/";
 }
-
-
-
-
-
 
 // Function to toggle the visibility of additional blog details
 function toggleBlogDetails(blogPostId) {
