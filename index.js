@@ -17,10 +17,9 @@ function redirectToResumePage() {
 }
 
 
-// Function to open the Google Form when the "Contact Me" button is clicked
-function openGoogleForm() {
-    // Replace 'https://your-google-form-link' with the actual link to your Google Form
-    window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSfzyi9vUlynaLieAAtinKM60HbZyAzp11EywB_igqBEWp-zlA/viewform?usp=sf_link';
+// Function to open the LinkedIn when the "Contact Me" button is clicked
+function LinkedIn() {
+    window.location.href = 'https://www.linkedin.com/in/mahamud-osman/';
 }
 
 
