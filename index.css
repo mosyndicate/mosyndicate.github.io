@@ -347,18 +347,4 @@ footer {
 }
 
 
-/* Example for a responsive navbar */
-nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-/* Example for footer adjustments */
-.footer {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-
 
