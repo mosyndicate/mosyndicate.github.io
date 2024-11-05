@@ -330,13 +330,4 @@ footer {
 }
 
 
-@media (max-width: 768px) {
-    .content, .blog {
-        padding: 15px;
-        margin: 0;
-    }
-}
-
-
-
 
