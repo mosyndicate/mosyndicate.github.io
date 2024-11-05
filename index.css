@@ -155,21 +155,7 @@ nav ul li:hover .dropdown-content {
 
 
 .name-title {
-    margin-left: 35px; /* Adjust the margin as needed to add space between the lines and the name-title */
-}
-
-.resume-container {
-    /* Set the initial width of the resume container */
-    width: 100px;
-    
-    /* Hide any overflow beyond the specified width */
-    overflow: hidden;
-    
-    /* Add a smooth transition for width changes */
-    transition: width 0.3s;
-    
-    /* Set the cursor to a pointer to indicate interactivity */
-    cursor: pointer;
+    margin-left: 40px; /* Adjust the margin as needed to add space between the lines and the name-title */
 }
 
 
