@@ -331,17 +331,21 @@ footer {
 
 
 @media (max-width: 768px) {
-    nav a {
-        font-size: 14px !important;
-        padding: 10px !important;
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
     }
 
-    .content, .footer {
-        padding: 10px !important;
-        margin: 0 auto !important;
-        width: cover !important;
+    nav a {
+        display: block;
+        font-size: 16px; /* Adjust font size as needed */
+        padding: 10px;
+        text-align: center;
     }
 }
+
 
 /* Example for a responsive navbar */
 nav {
