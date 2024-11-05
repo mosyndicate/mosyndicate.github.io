@@ -20,6 +20,7 @@ header {
     background-color: #2c3e50;
     color: #ecf0f1;
     padding: 1px;
+    width: 100%
 }
 
 .header-content {
@@ -266,7 +267,7 @@ h1 {
 }
 
 .blog-post h3 {
-    font-size: 15px; /* Increase the font size of the blog post titles */
+    font-size: 10px; /* Increase the font size of the blog post titles */
     color: #000000
 ; /* Set a dark color for the titles */
     margin-bottom: 10px; /* Add bottom margin for separation */
@@ -274,14 +275,14 @@ h1 {
 
 
 .blog-post p {
-    font-size: 14px; /* Set the font size of the blog post content */
+    font-size: 8px; /* Set the font size of the blog post content */
     color: #181818; /* Set a slightly darker color for the content */
     line-height: 1.6; /* Improve the line height for better readability */
 }
 
 .blog-post h4 {
   font-family: 'Arial', sans-serif;
-    font-size: 10px;
+    font-size: 8px;
     color: #929292;
     margin-bottom: 10px;
 }
@@ -304,7 +305,7 @@ h1 {
     background-color: #3498db; /* Set a blue background color for the button */
     color: #fff; /* Set white text color for better contrast */
     padding: 10px 20px; /* Add padding to the button for a comfortable click area */
-    font-size: 10px; /* Set the font size of the button text */
+    font-size: 8px; /* Set the font size of the button text */
     border: none; /* Remove the default button border */
     border-radius: 4px; /* Add rounded corners for a modern look */
     cursor: pointer; /* Set the cursor to a pointer for indicating interactivity */
