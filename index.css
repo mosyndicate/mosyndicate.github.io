@@ -44,7 +44,7 @@ nav ul {
 nav ul li {
     margin: 0 15px;
     position: relative;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 nav a {
@@ -200,7 +200,7 @@ nav ul li:hover .dropdown-content {
 
 .about-me h2 {
     /* Set the font size, color, and margin for the "About Me" heading */
-    font-size: 15px;
+    font-size: 13px;
     color: #000000;
     margin-bottom: 20px;
     text-align: center;
@@ -208,7 +208,7 @@ nav ul li:hover .dropdown-content {
 
 .about-me p {
     /* Set the font size, color, and line height for paragraphs in the "About Me" section */
-    font-size: 10px;
+    font-size: 8px;
     color: #000000;
     line-height: 1.6;
     margin-left: 5%;
@@ -236,12 +236,12 @@ nav ul li:hover .dropdown-content {
 }
 
 h1 {
-    font-size: 16px
+    font-size: 14px
 }
 
 .blog h2 {
     font-family: 'Arial', sans-serif;
-    font-size: 28px; /* Increase the font size of the blog title */
+    font-size: 15px; /* Increase the font size of the blog title */
     color: #000000
 ; /* Set a dark color for the title */
     margin-bottom: 30px; /* Add bottom margin for separation */
