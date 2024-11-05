@@ -196,6 +196,7 @@ nav ul li:hover .dropdown-content {
   background-size: flex;
 }
 
+
 .about-me h2 {
     /* Set the font size, color, and margin for the "About Me" heading */
     font-size: 24px;
@@ -227,9 +228,14 @@ nav ul li:hover .dropdown-content {
 .blog {
     background-color: #f8f9fa; /* Set the background color for the blog section */
     background-image: url('PClines.png'); /* Set the background image path */
-    background-size: auto; /* Cover the entire background with the image */
+    background-size: 100%; /* Cover the entire background with the image */
     background-position: center; /* Center the background image */
     padding: 20px 10px;
+    height: 900px;
+}
+
+h1 {
+    font-size: 16px
 }
 
 .blog h2 {
@@ -311,13 +317,12 @@ nav ul li:hover .dropdown-content {
 
 
 footer {
-    background-color: #34495e; /* Set the background color for the footer */
-    color: #ecf0f1; /* Set the text color for the footer content */
-    padding: 20px 0; /* Add padding to the footer for spacing */
-    text-align: center; /* Align the text to the center */
-}
-
-footer p {
-    margin: 0; /* Remove default margin for paragraphs inside the footer */
+    background-color: #34495e; /* Footer background color */
+    color: #ecf0f1; /* Text color */
+    padding: 10px 0; /* Standard padding */
+    text-align: center; /* Centered text */
+    width: 100%; /* Full width of viewport */
+    position: fixed; /* Stick footer to bottom of the viewport */
+    bottom: 0; /* Align at the bottom */
 }
 
